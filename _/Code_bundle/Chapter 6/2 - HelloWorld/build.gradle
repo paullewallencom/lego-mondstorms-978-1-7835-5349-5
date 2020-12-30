@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+def main_class = "HelloWorld"
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src', 'ev3/DBusJava/src', 'ev3/ev3classes/src']
+        }
+
+        dependencies {
+            compile files('ev3/ev3classes/lib/jna-3.2.7.jar')
+        }
+
+        jar {
+            manifest {
+                attributes("Main-Class": main_class, "Class-Path": "/home/root/lejos/lib/ev3classes.jar /home/root/lejos/libjna/usr/share/java/jna.jar")
+            }
+        }
+    }
+}
+            

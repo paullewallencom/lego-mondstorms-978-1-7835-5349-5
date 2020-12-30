@@ -1,0 +1,10 @@
+This code bundle contains all of the code examples covered in the book. They only require two modifications to become fully functional:
+
+1) If you are using Bluetooth to communicate with the EV3 you will need to edit the Makefile and supply the BT_ADDR of the EV3 as discussed in Chapter 5.
+
+2) All of the LeJOS code samples contain an 'ev3' folder which in turn contain EMPTY 'DBusJava' and 'ev3classes' sub-folders. These are just place-holders. You must copy the actual 'DBusJava' and 'ev3classes' folders from the LeJOS library in to the 'ev3' folder for the code to work. Chapter 6 discusses how to download the LeJOS library.
+
+
+I hope you have a great time implementing these examples and I wish you every success in your robot endeavours.
+
+Abid H. Mujtaba
